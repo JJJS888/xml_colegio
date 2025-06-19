@@ -2,38 +2,90 @@
 <?xml-stylesheet type="text/xsl" href="colegio.xsl"?>
 <colegios xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="colegio.xsd">
 
-    <colegio codigo="C001">
-        <nombre>Marpe</nombre>
+    <colegio codigo="R001">
+        <nombre>Inst Alonso Quesada</nombre>
         <direccion>Altavista</direccion>
         <telefono>928.35.12.21</telefono>
-   
 
+    
     <alumnos>
         <alumno num_exp="A001">
-            <nombre></nombre>
-            <apellidos></apellidos>
-            <curso></curso>
-            <notaMedia></notaMedia>
+            <nombre>Daniel</nombre>
+            <apellidos>Garcia</apellidos>
+            <curso>1º Bachillerato</curso>
+            <notaMedia>8.5</notaMedia>
+        </alumno>
+
+         <alumno num_exp="A002">
+            <nombre>Ramon</nombre>
+            <apellidos>Moreno</apellidos>
+            <curso>3º Bachillerato</curso>
+            <notaMedia>7.8</notaMedia>
+        </alumno>
+        <alumno num_exp="A003">
+            <nombre>Maria Jesus</nombre>
+            <apellidos>Avila</apellidos>
+            <curso>1º Baschillerato</curso>
+            <notaMedia>6.9</notaMedia>
+        </alumno>
+        <alumno num_exp="A004">
+            <nombre>Irene</nombre>
+            <apellidos>Mesa</apellidos>
+            <curso>3º Bachillerato</curso>
+            <notaMedia>9.5</notaMedia>
         </alumno>
     </alumnos>
 
     <profesores>
        <profesor codigo="P001">
-            <nombre></nombre>
-            <apellidos></apellidos>
-            <asignatura></asignatura>
-            <telefono></telefono>
+            <nombre>Arturo</nombre>
+            <apellidos>Mendoza</apellidos>
+            <asignatura>Matematicas</asignatura>
+            <telefono>928.46.50.31</telefono>
+        </profesor>
+           <profesor codigo="P002">
+            <nombre>Elena</nombre>
+            <apellidos>Sabina</apellidos>
+            <asignatura>Fisica</asignatura>
+            <telefono>928.45.12.78</telefono>
+        </profesor>
+           <profesor codigo="P003">
+            <nombre>Basilio</nombre>
+            <apellidos>Arteaga</apellidos>
+            <asignatura>Quimica</asignatura>
+            <telefono>928.28.13.65</telefono>
+        </profesor>
+           <profesor codigo="P005">
+            <nombre>Carmen</nombre>
+            <apellidos>Morales</apellidos>
+            <asignatura>Historia</asignatura>
+            <telefono>928.31.65.98</telefono>
         </profesor>
     </profesores>
 
     <asignaturas>
         <asignatura codigo="MATH101">
-            <nombre></nombre>
-            <codigo></codigo>
-            <creditos></creditos>
+            <nombre>Matematicas</nombre>
+            <codigo>MAT101</codigo>
+            <creditos>9</creditos>
+        </asignatura>
+         <asignatura codigo="FISH102">
+            <nombre>Fisica</nombre>
+            <codigo>FIS201</codigo>
+            <creditos>9</creditos>
+        </asignatura>
+         <asignatura codigo="QUIH103">
+            <nombre>Quimica</nombre>
+            <codigo>QUI301</codigo>
+            <creditos>7</creditos>
+        </asignatura>
+         <asignatura codigo="HISH104">
+            <nombre>Historia</nombre>
+            <codigo>HIS401</codigo>
+            <creditos>6</creditos>
         </asignatura>
     </asignaturas>
 
-     </colegio>
-
+</colegio>
+   
 </colegios>
