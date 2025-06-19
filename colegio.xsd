@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           elementFormDefault="qualified">
+
+  <!-- Elemento raíz -->
+  <xs:element name="colegios">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="colegio" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="nombre" type="xs:string"/>
+              <xs:element name="direccion" type="xs:string"/>
+              <xs:element name="telefono" type="xs:string"/>
+
+              <xs:element name="alumnos">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="alumno" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="nombre" type="xs:string"/>
+                          <xs:element name="apellidos" type="xs:string"/>
+                          <xs:element name="curso" type="xs:string"/>
+                          <xs:element name="notaMedia" type="xs:string"/>
+                        </xs:sequence>
+                        <xs:attribute name="num_exp" type="xs:string" use="required"/>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+
+              <xs:element name="profesores">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="profesor" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="nombre" type="xs:string"/>
+                          <xs:element name="apellidos" type="xs:string"/>
+                          <xs:element name="asignatura" type="xs:string"/>
+                          <xs:element name="telefono" type="xs:string"/>
+                        </xs:sequence>
+                        <xs:attribute name="codigo" type="xs:string" use="required"/>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+
+              <xs:element name="asignaturas">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="asignatura" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="nombre" type="xs:string"/>
+                          <xs:element name="codigo" type="xs:string"/>
+                          <xs:element name="creditos" type="xs:string"/>
+                        </xs:sequence>
+                        <xs:attribute name="codigo" type="xs:string" use="required"/>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+
+            </xs:sequence>
+            <xs:attribute name="codigo" type="xs:string" use="required"/>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+</xs:schema>

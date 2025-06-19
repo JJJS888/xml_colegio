@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="colegio.xsl"?>
+<colegios xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="colegio.xsd">
+
+    <colegio codigo="C001">
+        <nombre>Marpe</nombre>
+        <direccion>Altavista</direccion>
+        <telefono>928.35.12.21</telefono>
+   
+
+    <alumnos>
+        <alumno num_exp="A001">
+            <nombre></nombre>
+            <apellidos></apellidos>
+            <curso></curso>
+            <notaMedia></notaMedia>
+        </alumno>
+    </alumnos>
+
+    <profesores>
+       <profesor codigo="P001">
+            <nombre></nombre>
+            <apellidos></apellidos>
+            <asignatura></asignatura>
+            <telefono></telefono>
+        </profesor>
+    </profesores>
+
+    <asignaturas>
+        <asignatura codigo="MATH101">
+            <nombre></nombre>
+            <codigo></codigo>
+            <creditos></creditos>
+        </asignatura>
+    </asignaturas>
+
+     </colegio>
+
+</colegios>
